@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe Book do
   before :each do
-      @book = Book.new "Title", "Author", "Not a symbol"
+    @book = Book.new "Title", "Author", "Not a symbol"
   end
 
   describe "#new" do
@@ -13,7 +13,6 @@ describe Book do
 
   describe "#new" do
     it "Book object should have the correct title" do
-      puts @book.title + "\n\n\n"
       expect(@book.title).to eq("Title")
     end
   end
